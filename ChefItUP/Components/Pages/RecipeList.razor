@@ -1,0 +1,47 @@
+@page "/recipes"
+
+@using ChefItUP.Services
+@inject RecipeService RecipeService
+
+<h3>Recipe Search</h3>
+
+<div>
+    <input placeholder="Enter recipe name..." @bind="searchQuery" />
+    <button @onclick="SearchRecipes">Search</button>
+</div>
+
+@if (recipes == null)
+{
+    <p>Loading...</p>
+}
+else if (recipes.Count == 0)
+{
+    <p>No recipes found.</p>
+}
+else
+{
+    <div class="recipe-list">
+        @foreach (var recipe in recipes)
+        {
+            <div class="recipe-card">
+                <img src="@recipe.Image" alt="@recipe.Title" />
+                <h4>@recipe.Title</h4>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<RecipeResponse.Recipe> recipes;
+    private string searchQuery;
+
+    protected override async Task OnInitializedAsync()
+    {
+        recipes = await RecipeService.GetRecipesAsync(searchQuery);
+    }
+
+    private async Task SearchRecipes()
+    {
+        recipes = await RecipeService.GetRecipesAsync(searchQuery);
+    }
+}
