@@ -20,10 +20,10 @@ else if (recipes.Count == 0)
 }
 else
 {
-    <div class="recipe-list">
+    <div>
         @foreach (var recipe in recipes)
         {
-            <div class="recipe-card">
+            <div>
                 <img src="@recipe.Image" alt="@recipe.Title" />
                 <h4>@recipe.Title</h4>
             </div>
