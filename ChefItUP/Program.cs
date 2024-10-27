@@ -13,6 +13,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddHttpClient<RecipeService>();
+builder.Services.AddHttpClient<NutritionService>();
 
 
 builder.Services.AddCascadingAuthenticationState();

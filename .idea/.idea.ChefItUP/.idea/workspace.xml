@@ -10,9 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0aaed57-815d-423b-b541-0126fefef64f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChefItUP/RecipeResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/NutritionInfo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChefItUP/NutritionResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChefItUP/Services/NutritionService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Weather.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Services/RecipeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Services/RecipeService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChefItUP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +33,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ryanhabis"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ryanhabis&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ryanhabis/chefItUp.git",
-    "accountId": "cac6a46d-4d39-42ce-a1f6-71ee08990fe0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ryanhabis/chefItUp.git&quot;,
+    &quot;accountId&quot;: &quot;cac6a46d-4d39-42ce-a1f6-71ee08990fe0&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5acc345db3c207bc9d886a36ff14867ef8d65557432172c2a42f19aeac04d1b/Nullable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/908efeecd47881577c21a15cfbb14eb475bf38a2fdc58ffdb9d25018def3/RenderTreeFrameArrayBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d04a416cac8afac0341a8be0e859b230f2eae64924298eef48c317ba35916/RenderTreeBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ChefItUP/Components/Services/RecipeService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -90,10 +100,55 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="ChefItUP: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="ChefItUP: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ChefItUP: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ChefItUP: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -130,7 +185,8 @@
       <option name="presentableId" value="Default" />
       <updated>1729952856037</updated>
       <workItem from="1729952857678" duration="518000" />
-      <workItem from="1729953408903" duration="2524000" />
+      <workItem from="1729953408903" duration="5493000" />
+      <workItem from="1730024848129" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <option name="closed" value="true" />
@@ -148,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729953094872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="API 1 - 3 files&#10; 1. Added service to Program.cs &#10; 2. Create a front page for browsing RecipeList.razor.&#10; 3. The response from the API to the client. RecipeResponse.cs.&#10; 4. Making the service use api key to get data from api.spoonacular.com">
+      <option name="closed" value="true" />
+      <created>1729956290891</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729956290891</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1729960806049</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729960806049</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +243,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Setup" />
     <MESSAGE value="setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup" />
+    <MESSAGE value="API 1 - 3 files&#10; 1. Added service to Program.cs &#10; 2. Create a front page for browsing RecipeList.razor.&#10; 3. The response from the API to the client. RecipeResponse.cs.&#10; 4. Making the service use api key to get data from api.spoonacular.com" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

@@ -1,0 +1,30 @@
+@page "/nutrition"
+@using ChefItUP.Services
+@inject NutritionService NutritionService
+
+<h3>Nutrition Information</h3>
+
+<div>
+    <input placeholder="Enter ingredient..." @bind="ingredient" />
+    <button @onclick="GetNutritionData">Analyze</button>
+</div>
+
+@if (nutritionData != null)
+{
+    <p><strong>Calories:</strong> @nutritionData.Calories</p>
+    <div>
+        <p><strong>Fat:</strong> @nutritionData.TotalNutrients.FAT.Quantity @nutritionData.TotalNutrients.FAT.Unit</p>
+        <p><strong>Carbohydrates:</strong> @nutritionData.TotalNutrients.CHOCDF.Quantity @nutritionData.TotalNutrients.CHOCDF.Unit</p>
+        <p><strong>Protein:</strong> @nutritionData.TotalNutrients.PROCNT.Quantity @nutritionData.TotalNutrients.PROCNT.Unit</p>
+    </div>
+}
+
+@code {
+    private string ingredient;
+    private NutritionResponse nutritionData;
+
+    private async Task GetNutritionData()
+    {
+        nutritionData = await NutritionService.GetNutritionDataAsync(ingredient);
+    }
+}
