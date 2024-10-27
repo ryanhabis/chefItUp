@@ -9,18 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aaed57-815d-423b-b541-0126fefef64f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/NutritionInfo.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChefItUP/NutritionResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChefItUP/Services/NutritionService.cs" afterDir="false" />
+    <list default="true" id="c0aaed57-815d-423b-b541-0126fefef64f" name="Changes" comment="NutritionInfo.razor works!!">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Weather.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Services/RecipeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Services/RecipeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/Home.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +41,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5acc345db3c207bc9d886a36ff14867ef8d65557432172c2a42f19aeac04d1b/Nullable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/908efeecd47881577c21a15cfbb14eb475bf38a2fdc58ffdb9d25018def3/RenderTreeFrameArrayBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d04a416cac8afac0341a8be0e859b230f2eae64924298eef48c317ba35916/RenderTreeBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChefItUP/Components/Services/RecipeService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ryanh/RiderProjects/ChefItUP/ChefItUP/Components/Pages/NutritionInfo.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChefItUP/Services/RecipeService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -186,7 +179,7 @@
       <updated>1729952856037</updated>
       <workItem from="1729952857678" duration="518000" />
       <workItem from="1729953408903" duration="5493000" />
-      <workItem from="1730024848129" duration="1648000" />
+      <workItem from="1730024848129" duration="3607000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <option name="closed" value="true" />
@@ -220,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729960806049</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed recipe API button works, added NutritionInfo.razor and its components">
+      <option name="closed" value="true" />
+      <created>1730026688849</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730026688849</updated>
+    </task>
+    <task id="LOCAL-00006" summary="NutritionInfo.razor works!!">
+      <option name="closed" value="true" />
+      <created>1730027595673</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730027595674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +254,8 @@
     <MESSAGE value="setup" />
     <MESSAGE value="API 1 - 3 files&#10; 1. Added service to Program.cs &#10; 2. Create a front page for browsing RecipeList.razor.&#10; 3. The response from the API to the client. RecipeResponse.cs.&#10; 4. Making the service use api key to get data from api.spoonacular.com" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Fixed recipe API button works, added NutritionInfo.razor and its components" />
+    <MESSAGE value="NutritionInfo.razor works!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="NutritionInfo.razor works!!" />
   </component>
 </project>

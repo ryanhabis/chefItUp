@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <None Update="Data\app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+        <None Include="wwwroot\Images\Healthy-Foods.jpeg" />
     </ItemGroup>
 
     <ItemGroup>
