@@ -4,7 +4,7 @@
 @inject RecipeService RecipeService
 
 <h3>Recipe Search</h3>
-
+<p>Try:- (Linguine) or (Chicken) or (Pasta)</p>
 <div>
     <input placeholder="Enter recipe name..." @bind="searchQuery" />
     <button @onclick="SearchRecipes">Search</button>
@@ -33,7 +33,6 @@ else
 
 @code {
     private List<RecipeResponse.Recipe> recipes;
-    
     private string searchQuery;
 
     protected override async Task OnInitializedAsync()

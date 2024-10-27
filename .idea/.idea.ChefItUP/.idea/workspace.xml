@@ -9,10 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0aaed57-815d-423b-b541-0126fefef64f" name="Changes" comment="NutritionInfo.razor works!!">
+    <list default="true" id="c0aaed57-815d-423b-b541-0126fefef64f" name="Changes" comment="Added visuals to home screen.">
+      <change afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeNutrition.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChefItUP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/ChefItUP.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Components/Pages/RecipeList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChefItUP/Services/RecipeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChefItUP/Services/RecipeService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +182,7 @@
       <updated>1729952856037</updated>
       <workItem from="1729952857678" duration="518000" />
       <workItem from="1729953408903" duration="5493000" />
-      <workItem from="1730024848129" duration="3607000" />
+      <workItem from="1730024848129" duration="6479000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <option name="closed" value="true" />
@@ -229,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730027595674</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added visuals to home screen.">
+      <option name="closed" value="true" />
+      <created>1730028533347</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730028533347</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +267,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="Fixed recipe API button works, added NutritionInfo.razor and its components" />
     <MESSAGE value="NutritionInfo.razor works!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="NutritionInfo.razor works!!" />
+    <MESSAGE value="Added visuals to home screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added visuals to home screen." />
   </component>
 </project>

@@ -1,0 +1,70 @@
+@page "/recipe-nutrition"
+@using ChefItUP.Services
+@inject RecipeService RecipeService
+@inject NutritionService NutritionService
+
+<h3>Recipe Search with Nutrition Info</h3>
+<p> Once you found a recipe you like click on it at the end of the page you will see the protein carbs and calories of that meal</p>
+
+<!-- Recipe Search Input -->
+<div>
+    <input placeholder="Enter recipe name..." @bind="searchQuery" />
+    <button @onclick="SearchRecipes">Search Recipes</button>
+</div>
+<!-- Display Recipes -->
+@if (recipes == null)
+{
+    <p>Loading...</p>
+}
+else if (recipes.Count == 0)
+{
+    <p>No recipes found.</p>
+}
+else
+{
+    <h4>Recipe Results</h4>
+    <div>
+        @foreach (var recipe in recipes)
+        {
+            <div  @onclick="() => LoadNutritionInfo(recipe)">
+                <img src="@recipe.Image" alt="@recipe.Title" />
+                <h4>@recipe.Title</h4>
+            </div>
+        }
+    </div>
+}
+
+<!-- Display Nutrition Info -->
+@if (selectedRecipe != null && nutritionData != null)
+{
+    <h4>Nutrition Information for @selectedRecipe.Title</h4>
+    <p><strong>Calories:</strong> @nutritionData.Calories</p>
+    <div>
+        <p><strong>Fat:</strong> @nutritionData.TotalNutrients.FAT.Quantity @nutritionData.TotalNutrients.FAT.Unit</p>
+        <p><strong>Carbohydrates:</strong> @nutritionData.TotalNutrients.CHOCDF.Quantity @nutritionData.TotalNutrients.CHOCDF.Unit</p>
+        <p><strong>Protein:</strong> @nutritionData.TotalNutrients.PROCNT.Quantity @nutritionData.TotalNutrients.PROCNT.Unit</p>
+    </div>
+}
+
+@code {
+    private List<RecipeResponse.Recipe> recipes;
+    private RecipeResponse.Recipe selectedRecipe;
+    private NutritionResponse nutritionData;
+    private string searchQuery = "rice"; // default search query
+
+    // Search for recipes
+    private async Task SearchRecipes()
+    {
+        recipes = await RecipeService.GetRecipesAsync(searchQuery);
+        selectedRecipe = null; // Clear previous selection
+        nutritionData = null;
+    }
+
+    // Load Nutrition Info for Selected Recipe
+    private async Task LoadNutritionInfo(RecipeResponse.Recipe recipe)
+    {
+        selectedRecipe = recipe;
+        // For demo, we'll assume the recipe name can be used as the ingredient (can be more detailed with actual ingredients if available)
+        nutritionData = await NutritionService.GetNutritionDataAsync($"1 serving {recipe.Title}");
+    }
+}

@@ -14,7 +14,6 @@ public class RecipeService
     {
         _httpClient = httpClient;
     }
-
     public async Task<List<RecipeResponse.Recipe>> GetRecipesAsync(string query = "Pasta")
     {
         var response = await _httpClient.GetFromJsonAsync<RecipeResponse>(
